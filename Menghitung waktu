@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    int detik;
+    int menit;
+    int jam;
+    int hari;
+    int sisa_detik;
+
+    printf("Masukkan jumlah detik (misal, 259200): ");
+    scanf("%d", &detik);
+
+    hari = detik / 86400;
+    jam = (detik % 86400) / 3600;
+    menit = (detik % 3600) / 60;
+    sisa_detik = detik % 60;
+
+    printf("jadi, dari detik yang diberikan terhitung: \n");
+    printf("%d hari\n", hari);
+    printf("%d jam\n", jam);
+    printf("%d menit\n", menit);
+    printf("%d detik\n", sisa_detik);
+
+return 0;
+}
