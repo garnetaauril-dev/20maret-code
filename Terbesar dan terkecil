@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, angka;
+    int terbesar, terkecil;
+
+    printf("Masukan total angka: ");
+    scanf("%d", &n);
+
+
+    printf("Angka ke-1: ");
+    scanf("%d", &angka);
+    terbesar = angka;
+    terkecil = angka;
+
+
+    for(i = 2; i <= n; i++) {
+        printf("Angka ke-%d: ", i);
+        scanf("%d", &angka);
+
+        if(angka > terbesar) {
+            terbesar = angka;
+        }
+        if(angka < terkecil) {
+            terkecil = angka;
+        }
+    }
+
+    printf("\nAngka terbesar adalah: %d\n", terbesar);
+    printf("Angka terkecil adalah: %d\n", terkecil);
+
+    return 0;
+}
