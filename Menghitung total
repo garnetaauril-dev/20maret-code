@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main () {
+        int a,b,c,d,total;
+
+        printf("Masukkan bilangan 1: ");
+        scanf("%d", &a);
+        printf("Masukkan bilangan 2: ");
+        scanf("%d", &b);
+        printf("Masukkan bilangan 3: ");
+        scanf("%d", &c);
+        printf("Masukkan bilangan 4: ");
+        scanf("%d", &d);
+        total = a + b + c + d;
+
+        printf("input adalah bilangan %d %d %d %d\n", a,b,c,d);
+        printf("totalnya adalah %d\n", total);
+
+        return 0;
+}
